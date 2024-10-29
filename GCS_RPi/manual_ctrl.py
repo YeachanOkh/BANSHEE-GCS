@@ -3,10 +3,13 @@ import time
 import board
 import neopixel
 
-#Pin definitions:
+# Set pin numbering mode
+GPIO.setmode(GPIO.BCM)  # or GPIO.BOARD, depending on your pin reference
+
+# Pin definitions:
 signalPin = 16
-#pixel_pin = board.D18
-#num_pixels = 12
+# pixel_pin = board.D18
+# num_pixels = 12
 
 print("ON")
 time.sleep(1)
