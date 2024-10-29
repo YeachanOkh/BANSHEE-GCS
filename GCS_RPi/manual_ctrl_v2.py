@@ -5,7 +5,7 @@ import neopixel
 
 # Pin definitions
 signalPin = 16  # GPIO pin to toggle
-pixel_pin = board.D18  # Pin for NeoPixel data
+#pixel_pin = board.D18  # Pin for NeoPixel data
 num_pixels = 12  # Number of NeoPixel LEDs
 
 # GPIO setup
@@ -21,13 +21,13 @@ try:
     while True:
         # Turn on GPIO pin and set LEDs to green
         GPIO.output(signalPin, GPIO.HIGH)
-        pixels.fill((0, 255, 0))  # Green color
+       # pixels.fill((0, 255, 0))  # Green color
         print("GPIO HIGH - LEDs GREEN")
         time.sleep(1)  # Wait for 1 second
 
         # Turn off GPIO pin and set LEDs to red
         GPIO.output(signalPin, GPIO.LOW)
-        pixels.fill((255, 0, 0))  # Red color
+     #   pixels.fill((255, 0, 0))  # Red color
         print("GPIO LOW - LEDs RED")
         time.sleep(1)  # Wait for 1 second
 
@@ -35,5 +35,5 @@ except KeyboardInterrupt:
     # Cleanup GPIO and turn off LEDs on exit
     print("Cleaning up GPIO and turning off LEDs...")
     GPIO.cleanup()
-    pixels.fill((0, 0, 0))  # Turn off all LEDs
+   # pixels.fill((0, 0, 0))  # Turn off all LEDs
     print("Cleanup complete.")
