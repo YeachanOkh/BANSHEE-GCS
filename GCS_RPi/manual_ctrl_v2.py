@@ -26,7 +26,7 @@ try:
         time.sleep(1)  # Wait for 1 second
 
         # Turn off GPIO pin and set LEDs to red
-        GPIO.output(signalPin, GPIO.LOW)
+        # GPIO.output(signalPin, GPIO.LOW)
      #   pixels.fill((255, 0, 0))  # Red color
         print("GPIO LOW - LEDs RED")
         time.sleep(1)  # Wait for 1 second
