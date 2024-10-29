@@ -13,7 +13,7 @@ GPIO.setmode(GPIO.BCM)  # Set GPIO numbering mode to BCM
 GPIO.setup(signalPin, GPIO.OUT)  # Set the signal pin as an output
 
 # NeoPixel setup
-pixels = neopixel.NeoPixel(pixel_pin, num_pixels)
+#pixels = neopixel.NeoPixel(pixel_pin, num_pixels)
 
 print("GPIO and NeoPixel setup complete. Running in a loop...")
 
