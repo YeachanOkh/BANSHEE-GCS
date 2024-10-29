@@ -5,8 +5,8 @@ import neopixel
 
 #Pin definitions:
 signalPin = 16
-pixel_pin = board.D18
-num_pixels = 12
+#pixel_pin = board.D18
+#num_pixels = 12
 
 print("ON")
 time.sleep(1)
@@ -14,12 +14,12 @@ mode = GPIO.getmode()
 print(mode)
 GPIO.setup(signalPin, GPIO.OUT)
 
-pixels = neopixel.NeoPixel(pixel_pin, num_pixels)
+#pixels = neopixel.NeoPixel(pixel_pin, num_pixels)
 
 try:
     while 1:
         print("HIGH")
-        pixels.fill((0, 255, 0))
+        #pixels.fill((0, 255, 0))
         GPIO.output(signalPin, GPIO.HIGH)
         time.sleep(1)
         GPIO.output(signalPin, GPIO.LOW)
@@ -32,7 +32,7 @@ try:
         #time.sleep(5)
         GPIO.output(signalPin, GPIO.HIGH)
         print("HIGH")
-        pixels.fill((255, 0, 0))
+        #pixels.fill((255, 0, 0))
         GPIO.output(signalPin, GPIO.LOW)
         print("LOW")
         #time.sleep(5)
