@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "BANSHEE-GCS"
+		},
+		{
+			"name": "SSH FS - linodeserver",
+			"uri": "ssh://linodeserver/"
+		}
+	],
+	"settings": {}
+}
